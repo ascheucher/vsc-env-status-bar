@@ -1,12 +1,14 @@
-# Status Bar Sample
+# Status Bar Environmen Display
 
-This is a sample extension that adds a status bar entry showing the current number of selected lines.
+Just a simple extension of Visual Studio Code to just show the value of one ENV variable.
 
-![Show number of selected lines](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/statusbar-sample/preview.gif)
+## create a private packe
 
+Use `vsce` tool in the project root directory to create a .vsix file:
 
-## VS Code API
+```bash
+npm install -g vsce
+vsce package
+```
 
-### `vscode` module
-
-- [`window.createStatusBarItem`](https://code.visualstudio.com/api/references/vscode-api#window.createStatusBarItem)
+Take a look into the DesignDb .devcontainer/devcontainer.json file on how to install it then.
