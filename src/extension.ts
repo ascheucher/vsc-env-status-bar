@@ -42,6 +42,9 @@ function getEnviroMessage(): string {
 }
 
 function getEnviroFromEnvFile(): string {
+  // The needed environment variable is added by the python extension.
+  // Hence, we do not have access to it. As it's defined in the .env
+  // file anyway, just read the file.
   try {
     let enviro = "No .env file.";
     if (vscode.workspace.workspaceFolders) {
